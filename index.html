@@ -14,14 +14,14 @@
 
 <body class="flex flex-column">
     <!-- main content and aside bar -->
-    <main class="grow bg_primary">
-        <aside class="flex flex-column ai-center h100 bg_black">
+    <main class="grow bg_primary flex">
+        <aside class="flex flex-column ai-center h100 px8px bg_black noshrink">
             <!-- the brand logos being shown based on screen size -->
             <div class="brand mb-10px h40px">
                 <img class="big-logo h100 contain-center" src="./img/logos and icons/logo.svg" alt="" hidden>
                 <img class="small-logo h100 contain-center" src="./img/logos and icons/logo-small.svg" alt="">
             </div>
-            <div class="aside-head">
+            <div class="aside-head grow">
                 <div class="item aside-home my5px p2px h35px">
                     <img class="h100" src="./img/logos and icons/home.svg" alt="">
                     <!-- will appear in larger screens -->
@@ -44,7 +44,7 @@
                     </span>
                 </div>
             </div>
-            <div hidden class="play-lists">
+            <div hidden class="play-lists grow2">
                 <h2>PLAYLIST</h2>
                 <div class="item h40px flex ai-center">
                     <div class="w30 bg_sec flex ai-center jc-center h100">
@@ -55,15 +55,29 @@
                     </div>
                 </div>
             </div>
-            <div class="profile">
-                
+            <div class="profile h80px self-end w100 px8px py3px flex flex-column ai-center">
+                <div class="down_app">
+                    <i class="far fa-arrow-alt-circle-down color_sec fsz18"></i>
+                    <span hidden>
+                        <h5>Installa App</h5>
+                    </span>
+                    <hr hidden>
+                </div>
+                <div class="pro_pic">
+                    <div class="wrapper circle h35px w35px bg_sec ov-hidden ta-center">
+                        <img class="h100 contain-center" src="./img/logos and icons/profile.svg" alt="">
+                    </div>
+                    <span hidden>
+                        <h3>John Doe</h3>
+                    </span>
+                </div>
             </div>
         </aside>
         <section class="playable"></section>
     </main>
 
     <!-- player controls -->
-    <footer></footer>
+    <footer class="h80px bg_third self-end"></footer>
 </body>
 
 </html>

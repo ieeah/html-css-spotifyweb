@@ -30,6 +30,15 @@ h4 {
     color: #7b7d82;
 }
 
+h5 {
+    font-size: 1.8rem;
+    color: #7b7d82;
+}
+
+.fsz18 {
+    font-size: 1.8rem;
+}
+
 /* COLORS */
 /* 
     footer background #282828
@@ -47,6 +56,9 @@ h4 {
     .bg_sec {
         background-color: #a3a3a3;
     }
+    .bg_third {
+        background-color: #282828;
+    }
 
     /* text-colors */
     .color_main {
@@ -58,10 +70,19 @@ h4 {
 
 /* UTILITIES */
 
+    /* misc */
+    .ov-hidden {
+        overflow: hidden;
+    }
+
     /* imgs */
     .contain-center {
         object-fit: contain;
         object-position: center;
+    }
+
+    .circle {
+        border-radius: 50%;
     }
 
 /* FLEX */
@@ -74,6 +95,9 @@ h4 {
 .grow {
     flex-grow: 1;
 }
+.grow2 {
+    flex-grow: 2;
+}
 .noshrink {
     flex-shrink: 0;
 }
@@ -82,6 +106,9 @@ h4 {
 }
 .ai-center {
     align-content: center;
+}
+.self-end {
+    align-self: flex-end;
 }
 
 /* TEXT ALIGNING */
@@ -99,6 +126,9 @@ h4 {
     .w30 {
         width: 30%;
     }
+    .w35px {
+        width: 35px;
+    }
     .w70 {
         width: 70%;
     }
@@ -107,19 +137,31 @@ h4 {
     .h100 {
         height: 100%;
     }
+    .h30px {
+        height: 30px;
+    }
     .h35px {
         height: 35px;
     }
     .h40px {
         height: 40px;
     }
+    .h80px {
+        height: 80px;
+    }
 
     /* padding */
+    .py3px {
+        padding-block: 3px;
+    }
     .py15px {
         padding-block: 15px;
     }
     .p2px {
         padding: 2px;
+    }
+    .px8px {
+        padding-inline: 8px;
     }
 
     /* margin */
@@ -142,9 +184,9 @@ height: 100vh;
     /* SIDE BAR */
     aside {
         width: 55px;
-        padding: 4px 8px 15px;
+        padding-block: 4px 15px;
     }
-    
+
 
     /* PLAYABLE */
 
@@ -152,7 +194,4 @@ height: 100vh;
 /* FOOTER */
 footer {
     width: 100%;
-    height: 80px;
-    background-color: #282828;
-    align-self: flex-end;
 }
