@@ -60,7 +60,7 @@
                 </div>
             </div>
             <!-- profile details and download link -->
-            <div class="profile h80px self-end w100 ta-center">
+            <div class="profile h80px self-end w100 ta-center flex flex-column ai-center">
                 <div class="down_app mb-10px">
                     <i class="far fa-arrow-alt-circle-down color_sec fsz18"></i>
                     <span hidden>
@@ -69,7 +69,7 @@
                     <hr hidden>
                 </div>
                 <div class="pro_pic ta-center">
-                    <div class="wrapper circle h35px w35px bg_sec ov-hidden ta-center centered">
+                    <div class="wrapper circle h35px w35px bg_sec ov-hidden">
                         <img class="h35px w35px" src="./img/logos and icons/profile.svg" alt="">
                     </div>
                     <span hidden>
@@ -79,12 +79,12 @@
             </div>
         </aside>
         <section class="playable w100">
-            <div class="upgrade-cta flex jc-end p15px">
+            <div class="upgrade-cta flex jc-end p15px bg_rgba">
                 <button class="btn fsz12">EFFETTUA L'UPGRADE</button>
             </div>
-            <div class="wrapper">
+            <div class="wrapper p15px">
                 <div class="playable-navigator">
-                    <ul class="centered ta-center mtop-10px mb-50px">
+                    <ul class="centered ta-center mb-50px">
                         <li>In evidenza</li>
                         <li>podcast</li>
                         <li>classifiche</li>
@@ -93,7 +93,71 @@
                         <li>scopri</li>
                     </ul>
                 </div>
-
+                <div class="recent flex wrap">
+                    <h2 class="mb-50px w100">Recently played</h2>
+                    <div class="play-container flex wrap">
+                        <div class="card w50 px8px ta-center">
+                            <div class="overlay-wrapper relative">
+                                <img class="w100 contain-center" src="./img/cover/metal_lifting.jpg" alt="">
+                                <div class="overlay bg_rgba absolute flex jc-center ai-center">
+                                    <i class="far fa-play-circle fsz12 color_main"></i>
+                                </div>
+                            </div>
+                            <h4 class="mtop-5px">Heavy Metal</h4>
+                            <h5 class="mtop-5px mb-10px">Subtitle</h5>
+                        </div>
+                        <div class="card w50 px8px ta-center">
+                            <div class="overlay-wrapper relative">
+                                <img class="w100 contain-center" src="./img/cover/stranger.jpeg" alt="">
+                                <div class="overlay bg_rgba absolute flex jc-center ai-center">
+                                    <i class="far fa-play-circle fsz12 color_main"></i>
+                                </div>
+                            </div>
+                            <h4 class="mtop-5px">Stranger Things, Vol.1 (a Netflix original series soundtrack)</h4>
+                            <h5 class="mtop-5px mb-10px">Kyle Dixon & Michael Stein</h5>
+                        </div>
+                        <div class="card w50 px8px ta-center">
+                            <div class="overlay-wrapper relative">
+                                <img class="w100 contain-center" src="./img/cover/aquietplace.jpeg" alt="">
+                                <div class="overlay bg_rgba absolute flex jc-center ai-center">
+                                    <i class="far fa-play-circle fsz12 color_main"></i>
+                                </div>
+                            </div>
+                            <h4 class="mtop-5px">A quiet place</h4>
+                            <h5 class="mtop-5px mb-10px">Subtitle</h5>
+                        </div>
+                        <div class="card w50 px8px ta-center">
+                            <div class="overlay-wrapper relative scroll">
+                                <img class="w100 contain-center" src="./img/cover/split.jpeg" alt="">
+                                <div class="overlay bg_rgba absolute flex jc-center ai-center">
+                                    <i class="far fa-play-circle fsz12 color_main"></i>
+                                </div>
+                            </div>
+                            <h4 class="mtop-5px">Split</h4>
+                            <h5 class="mtop-5px mb-10px">Subtitle</h5>
+                        </div>
+                        <div class="card w50 px8px ta-center">
+                            <div class="overlay-wrapper relative scroll">
+                                <img class="w100 contain-center" src="./img/cover/cure.jpeg" alt="">
+                                <div class="overlay bg_rgba absolute flex jc-center ai-center">
+                                    <i class="far fa-play-circle fsz12 color_main"></i>
+                                </div>
+                            </div>
+                            <h4 class="mtop-5px">A cure for wellness</h4>
+                            <h5 class="mtop-5px mb-10px">Subtitle</h5>
+                        </div>
+                        <div class="card w50 px8px ta-center">
+                            <div class="overlay-wrapper relative">
+                                <img class="w100 contain-center" src="./img/cover/sinister.jpeg" alt="">
+                                <div class="overlay bg_rgba absolute flex jc-center ai-center">
+                                    <i class="far fa-play-circle fsz12 color_main"></i>
+                                </div>
+                            </div>
+                            <h4 class="mtop-5px">Sinister</h4>
+                            <h5 class="mtop-5px mb-10px">Subtitle</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

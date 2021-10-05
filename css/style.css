@@ -34,12 +34,12 @@ h3 {
 }
 
 h4 {
-    font-size: 1.9rem;
-    color: #7b7d82;
+    font-size: 1.7rem;
+    color: white;
 }
 
 h5 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     color: #7b7d82;
 }
 
@@ -63,6 +63,9 @@ h5 {
     }
     .bg_third {
         background-color: #282828;
+    }
+    .bg_rgba {
+        background-color: rgba(0, 0, 0, 0.3);
     }
 
     /* text-colors */
@@ -90,6 +93,11 @@ h5 {
         padding: 10px 15px;
         border-radius: 20px;
         border: 2px solid white;
+        cursor: pointer;
+    }
+
+    .ov-auto {
+        overflow: auto;
     }
 
     /* imgs */
@@ -109,7 +117,9 @@ h5 {
 .flex-column {
     flex-direction: column;
 }
-
+.wrap {
+    flex-wrap: wrap;
+}
 .grow {
     flex-grow: 1;
 }
@@ -126,7 +136,7 @@ h5 {
     justify-content: flex-end;
 }
 .ai-center {
-    align-content: center;
+    align-items: center;
 }
 .self-end {
     align-self: flex-end;
@@ -144,11 +154,17 @@ h5 {
     .w100 {
         width: 100%;
     }
+    .w25 {
+        width: 25%;
+    }
     .w30 {
         width: 30%;
     }
     .w35px {
         width: 35px;
+    }
+    .w50 {
+        width: 50%;
     }
     .w70 {
         width: 70%;
@@ -189,11 +205,20 @@ h5 {
     }
 
     /* margin */
+    .mr5px {
+        margin-right: 5px;
+    }
     .my5px {
         margin-block: 5px;
     }
+    .mtop-5px {
+        margin-top: 5px;
+    }
     .mtop-10px {
         margin-top: 10px;
+    }
+    .mb5px {
+        margin-bottom: 5px;
     }
     .mb-10px {
         margin-bottom: 10px;
@@ -202,6 +227,13 @@ h5 {
         margin-bottom: 50px;
     }
 
+    /* positions */
+    .relative {
+        position: relative;
+    }
+    .absolute {
+        position: absolute;
+    }
 
 /* LAYOUT */
 
@@ -218,9 +250,6 @@ height: 100vh;
 
 
     /* PLAYABLE */
-    .upgrade-cta {
-        background-color: rgba(0, 0, 0, 0.3);
-    }
 
     .playable-navigator ul li {
         display: inline-block;
@@ -228,7 +257,7 @@ height: 100vh;
         font-weight: 600;
         font-size: 1.2rem;
         padding-inline: 8px;
-        
+        cursor: pointer;
         color: #a3a3a3;
     }
 
@@ -243,6 +272,22 @@ height: 100vh;
 
     .playable-navigator ul li:hover:after {
         display: block;
+    }
+
+    .card:hover .overlay {
+        display: flex;
+    }
+
+    .card .overlay {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+
+    .card i {
+        font-size: 7rem;
     }
 
 
