@@ -12,11 +12,16 @@ html {
 
 * {
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.fsz12 {
+    font-size: 1.2rem;
 }
 
 h2,
 h3 {
-    font-weight: 600;
     color: white;
 }
 
@@ -38,9 +43,6 @@ h5 {
     color: #7b7d82;
 }
 
-.fsz18 {
-    font-size: 1.8rem;
-}
 
 /* COLORS */
 /* 
@@ -80,6 +82,14 @@ h5 {
 
     .centered {
         margin: 0 auto;
+    }
+
+    .btn {
+        background-color: transparent;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 20px;
+        border: 2px solid white;
     }
 
     /* imgs */
@@ -188,6 +198,9 @@ h5 {
     .mb-10px {
         margin-bottom: 10px;
     }
+    .mb-50px {
+        margin-bottom: 50px;
+    }
 
 
 /* LAYOUT */
@@ -205,16 +218,31 @@ height: 100vh;
 
 
     /* PLAYABLE */
-    .upgrade-cta button {
-        background-color: transparent;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 20px;
-        border: 2px solid white;
-    }
-
     .upgrade-cta {
         background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .playable-navigator ul li {
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.2rem;
+        padding-inline: 8px;
+        
+        color: #a3a3a3;
+    }
+
+    .playable-navigator ul li:after {
+        content: '';
+        width: 35px;
+        border-bottom:2px solid #adff2f;
+        background-color: #adff2f;
+        display: none;
+        margin: 0 auto;
+    }
+
+    .playable-navigator ul li:hover:after {
+        display: block;
     }
 
 
