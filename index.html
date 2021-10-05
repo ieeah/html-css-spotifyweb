@@ -9,27 +9,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css' integrity='sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==' crossorigin='anonymous'/>
 </head>
 
-<body>
+<body class="flex flex-column">
     <!-- main content and aside bar -->
-    <main class="w100">
-        <aside>
+    <main class="grow bg_primary">
+        <aside class="flex flex-column ai-center h100 bg_black">
             <!-- the brand logos being shown based on screen size -->
-            <div class="brand">
-                <img class="big-logo" src="./img/logos and icons/logo.svg" alt="" hidden>
-                <img class="small-logo" src="./img/logos and icons/logo-small.svg" alt="">
+            <div class="brand mb-10px h40px">
+                <img class="big-logo h100 contain-center" src="./img/logos and icons/logo.svg" alt="" hidden>
+                <img class="small-logo h100 contain-center" src="./img/logos and icons/logo-small.svg" alt="">
             </div>
             <div class="aside-head">
-                <div class="item aside-home my15px">
-                    <img src="./img/logos and icons/home.svg" alt="">
+                <div class="item aside-home my5px p2px h35px">
+                    <img class="h100" src="./img/logos and icons/home.svg" alt="">
+                    <!-- will appear in larger screens -->
                     <span hidden>
                         <h4>Home</h4>
                     </span>
                 </div>
+                <div class="item aside-home my5px p2px h35px">
+                    <img class="h100" src="./img/logos and icons/search.svg" alt="">
+                    <!-- will appear in larger screens -->
+                    <span hidden>
+                        <h4>Cerca</h4>
+                    </span>
+                </div>
+                <div class="item aside-home my5px p2px h35px">
+                    <img class="h100" src="./img/logos and icons/libreria.svg" alt="">
+                    <!-- will appear in larger screens -->
+                    <span hidden>
+                        <h4>La tua libreria</h4>
+                    </span>
+                </div>
             </div>
-            <div class="play-lists"></div>
-            <div class="profile"></div>
+            <div hidden class="play-lists">
+                <h2>PLAYLIST</h2>
+                <div class="item h40px flex ai-center">
+                    <div class="w30 bg_sec flex ai-center jc-center h100">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="w70">
+                        <h4>Crea Playlist</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="profile">
+                
+            </div>
         </aside>
         <section class="playable"></section>
     </main>

@@ -35,15 +35,59 @@ h4 {
     footer background #282828
     progress bar #5a5a5a
     progress bar hover #adff2f
-    main background #141922
     upper menu text #76787d
-    header background: black rgba
-    aside nav items #a3a3a3
 */
+    /* background-colors */
+    .bg_black {
+        background-color: black;
+    }
+    .bg_primary {
+        background-color: #141922;
+    }
+    .bg_sec {
+        background-color: #a3a3a3;
+    }
 
-
+    /* text-colors */
+    .color_main {
+        color: white;
+    }
+    .color_sec {
+        color: #a3a3a3;
+    }
 
 /* UTILITIES */
+
+    /* imgs */
+    .contain-center {
+        object-fit: contain;
+        object-position: center;
+    }
+
+/* FLEX */
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.grow {
+    flex-grow: 1;
+}
+.noshrink {
+    flex-shrink: 0;
+}
+.jc-center {
+    justify-content: center;
+}
+.ai-center {
+    align-content: center;
+}
+
+/* TEXT ALIGNING */
+.ta-center {
+    text-align: center;
+}
 
 
 /* SPACING */
@@ -52,66 +96,57 @@ h4 {
     .w100 {
         width: 100%;
     }
+    .w30 {
+        width: 30%;
+    }
+    .w70 {
+        width: 70%;
+    }
+
+    /* height */
+    .h100 {
+        height: 100%;
+    }
+    .h35px {
+        height: 35px;
+    }
+    .h40px {
+        height: 40px;
+    }
 
     /* padding */
     .py15px {
         padding-block: 15px;
     }
+    .p2px {
+        padding: 2px;
+    }
 
     /* margin */
-    .my15px {
-        margin-block: 15px;
+    .my5px {
+        margin-block: 5px;
+    }
+    .mb-10px {
+        margin-bottom: 10px;
     }
 
 
 /* LAYOUT */
 
 body {
-display: flex;
-flex-direction: column;
 height: 100vh;
 }
 
 /* MAIN */
-main {
-    background-color: #141922;
-    flex-grow: 1;
-}
 
+    /* SIDE BAR */
+    aside {
+        width: 55px;
+        padding: 4px 8px 15px;
+    }
+    
 
-/* SIDE BAR */
-aside {
-    width: 55px;
-    background-color: black;
-    padding: 4px 8px 15px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-aside .brand {
-    height: 40px;
-}
-
-aside .brand img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-}
-
-aside .aside-head .item {
-    height: 35px;
-}
-
-aside .aside-head .item img {
-    height: 100%;
-}
-
-
-
-/* PLAYABLE */
+    /* PLAYABLE */
 
 
 /* FOOTER */
