@@ -15,12 +15,14 @@
 <body class="flex flex-column">
     <!-- main content and aside bar -->
     <main class="grow bg_primary flex">
+        <!-- aside bar -->
         <aside class="flex flex-column ai-center h100 bg_black noshrink">
             <!-- the brand logos being shown based on screen size -->
             <div class="brand mb-10px mtop-10px h40px ta-center">
                 <img class="big-logo h100 contain-center" src="./img/logos and icons/logo.svg" alt="" hidden>
                 <img class="small-logo h100 contain-center" src="./img/logos and icons/logo-small.svg" alt="">
             </div>
+            <!-- the three aside main nav link area -->
             <div class="aside-head grow">
                 <div class="item aside-home my5px p5px h35px ta-center">
                     <img class="h100" src="./img/logos and icons/home.svg" alt="">
@@ -44,6 +46,7 @@
                     </span>
                 </div>
             </div>
+            <!-- where the playlists will be shown -->
             <div hidden class="play-lists grow2">
                 <h2>PLAYLIST</h2>
                 <div class="item h40px flex ai-center">
@@ -55,10 +58,8 @@
                     </div>
                 </div>
             </div>
+            <!-- profile details and download link -->
             <div class="profile h80px self-end w100 ta-center">
-                <!-- <div class="down-app mb-10px">
-
-                </div> -->
                 <div class="down_app mb-10px">
                     <i class="far fa-arrow-alt-circle-down color_sec fsz18"></i>
                     <span hidden>
@@ -76,7 +77,11 @@
                 </div>
             </div>
         </aside>
-        <section class="playable"></section>
+        <section class="playable w100">
+            <div class="upgrade-cta flex jc-end p15px">
+                <button class="btn">EFFETTUA L'UPGRADE</button>
+            </div>
+        </section>
     </main>
 
     <!-- player controls -->

@@ -8,6 +8,9 @@
 /* TYPO RULES */
 html {
     font-size: 10px;
+}
+
+* {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -96,6 +99,7 @@ h5 {
 .flex-column {
     flex-direction: column;
 }
+
 .grow {
     flex-grow: 1;
 }
@@ -107,6 +111,9 @@ h5 {
 }
 .jc-center {
     justify-content: center;
+}
+.jc-end {
+    justify-content: flex-end;
 }
 .ai-center {
     align-content: center;
@@ -164,6 +171,9 @@ h5 {
     .p5px {
         padding: 5px;
     }
+    .p15px {
+        padding: 15px;
+    }
     .px8px {
         padding-inline: 8px;
     }
@@ -195,6 +205,17 @@ height: 100vh;
 
 
     /* PLAYABLE */
+    .upgrade-cta button {
+        background-color: transparent;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 20px;
+        border: 2px solid white;
+    }
+
+    .upgrade-cta {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
 
 
 /* FOOTER */
