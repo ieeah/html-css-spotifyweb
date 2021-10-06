@@ -52,7 +52,7 @@ h4 {
 }
 
 h5 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #a3a3a3;
 }
 
@@ -128,7 +128,9 @@ h6 {
     .ov-auto {
         overflow: auto;
     }
-
+    .ov-hidden {
+        overflow: hidden;
+    }
     .pointer {
         cursor: pointer;
     }
@@ -150,14 +152,14 @@ h6 {
 .flex-column {
     flex-direction: column;
 }
+.flex-row {
+    flex-direction: row;
+}
 .wrap {
     flex-wrap: wrap;
 }
 .grow {
     flex-grow: 1;
-}
-.grow2 {
-    flex-grow: 2;
 }
 .noshrink {
     flex-shrink: 0;
@@ -174,6 +176,9 @@ h6 {
 .ai-start {
     align-items: flex-start;
 }
+.ai-end {
+    align-items: flex-end;
+}
 .self-end {
     align-self: flex-end;
 }
@@ -183,6 +188,9 @@ h6 {
 .jc-sp-around {
     justify-content: space-around;
 }
+.jc-sp-evenly {
+    justify-content: space-evenly;
+}
 
 /* TEXT ALIGNING */
 .ta-center {
@@ -191,16 +199,18 @@ h6 {
 .ta-right {
     text-align: right;
 }
-.va-middle {
-    vertical-align: middle;
-}
-
 
 /* SPACING */
 
     /* width */
     .w100 {
         width: 100%;
+    }
+    .w10 {
+        width: 10%;
+    }
+    .w15 {
+        width: 15%;
     }
     .w20 {
         width: 20%;
@@ -223,6 +233,12 @@ h6 {
     .w50 {
         width: 50%;
     }
+    .w55 {
+        width: 55%;
+    }
+    .w60 {
+        width: 60%;
+    }
     .w70 {
         width: 70%;
     }
@@ -231,6 +247,9 @@ h6 {
     }
     .w80px {
         width: 80px;
+    }
+    .max-w50px {
+        max-width: 50px;
     }
 
     /* height */
@@ -258,6 +277,9 @@ h6 {
     .h80px {
         height: 80px;
     }
+    .h80 {
+        height: 80%;
+    }
 
     /* padding */
     .py3px {
@@ -284,7 +306,6 @@ h6 {
     .px15px {
         padding-inline: 15px;
     }
-
     .pl5px {
         padding-left: 5px;
     }
@@ -300,6 +321,7 @@ h6 {
     .pr15px {
         padding-right: 15px;
     }
+
     /* margin */
     .mr5px {
         margin-right: 5px;
@@ -366,6 +388,11 @@ h6 {
     .absolute {
         position: absolute;
     }
+    .fixed {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
 
 /* LAYOUT */
 
@@ -402,6 +429,14 @@ height: 100vh;
 
     /* PLAYABLE */
 
+    .upgrade-cta {
+        width: calc(100% - 55px);
+    }
+
+    .playable-navigator {
+        margin-top: 80px;
+    }
+
     .playable-navigator ul li {
         display: inline-block;
         text-transform: uppercase;
@@ -409,7 +444,8 @@ height: 100vh;
         font-size: 1.2rem;
         cursor: pointer;
         color: #a3a3a3;
-        height: 25px;
+        margin-bottom: 25px;
+        height: 10px;
     }
 
     .playable-navigator ul li::after {
@@ -446,6 +482,10 @@ height: 100vh;
 
 .bar {
     border-radius: 5px;
+}
+
+footer .volume .wrapper > .bar {
+    transform: translateY(-10px);
 }
 
 .bar .cursor {
@@ -526,30 +566,34 @@ height: 100vh;
             margin-block: 10px;
         }
 
+        .upgrade-cta {
+            width: calc(100% - 180px);
+        }
+
 
 @media screen and (min-width:620px) {
+    .playable-navigator ul li {
+        margin-inline: 8px;
+    }
     .playable .wrapper .card.w50 {
         width: 25%;
     }
 
-    footer .current.w32 {
-        width: 20%;
+    
+    footer .volume .icons {
+        flex-direction: row;
     }
 
-    footer .current .fav {
-        padding-left: 20px;
+    footer .volume .wrapper {
+        justify-content: center;
     }
 
-    footer .player {
-        padding: 0 20px;
+    footer .volume .wrapper > .bar {
+        transform: none;
     }
 
-    footer .volume.w30 {
-        width: 20%;
-    }
-}
+@media screen and (min-width:714px) {
 
-@media screen and (min-width:800px) {
 
 }
 
