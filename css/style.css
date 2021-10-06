@@ -287,11 +287,18 @@ h6 {
     .px15px {
         padding-inline: 15px;
     }
+
+    .pl5px {
+        padding-left: 5px;
+    }
     .pl10px {
         padding-left: 10px;
     }
     .pl15px {
         padding-left: 15px;
+    }
+    .pr10px {
+        padding-right: 10px;
     }
     .pr15px {
         padding-right: 15px;
@@ -327,11 +334,17 @@ h6 {
     .my5px {
         margin-block: 5px;
     }
+    .my10px {
+        margin-block: 10px;
+    }
     .mtop-5px {
         margin-top: 5px;
     }
     .mtop-10px {
         margin-top: 10px;
+    }
+    .mtop15px {
+        margin-top: 15px;
     }
     .mb5px {
         margin-bottom: 5px;
@@ -397,9 +410,9 @@ height: 100vh;
         text-transform: uppercase;
         font-weight: 600;
         font-size: 1.2rem;
-        padding-inline: 8px;
         cursor: pointer;
         color: #a3a3a3;
+        height: 25px;
     }
 
     .playable-navigator ul li::after {
@@ -464,7 +477,7 @@ height: 100vh;
 
     @media screen and (min-width:500px) {
         aside.ai-center {
-            width: 200px;
+            width: 180px;
             align-items: flex-start;
         }
 
@@ -476,6 +489,10 @@ height: 100vh;
 
         aside .brand .big-logo {
             height: 35px;
+        }
+
+        aside .aside-head {
+            flex-grow: 0;
         }
 
         aside .aside-head span {
@@ -512,3 +529,33 @@ height: 100vh;
             margin-block: 10px;
         }
 
+
+@media screen and (min-width:700px) {
+    .playable .wrapper .card.w50 {
+        width: 25%;
+    }
+
+    footer .current img {
+        width: 20%;
+    }
+
+    footer .current.w32 {
+        width: 20%;
+    }
+
+    footer .current .player.w40 {
+        width: 60%;
+    }
+
+    footer .volume.w30 {
+        width: 20%;
+    }
+}
+
+@media screen and (min-width:870px) {
+    
+}
+
+@media screen and (min-width:1024px) {
+
+}
