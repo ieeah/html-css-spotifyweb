@@ -211,9 +211,6 @@ h6 {
     .w30 {
         width: 30%;
     }
-    .w32 {
-        width: 32%;
-    }
     .w35px {
         width: 35px;
     }
@@ -530,21 +527,21 @@ height: 100vh;
         }
 
 
-@media screen and (min-width:700px) {
+@media screen and (min-width:620px) {
     .playable .wrapper .card.w50 {
         width: 25%;
-    }
-
-    footer .current img {
-        width: 20%;
     }
 
     footer .current.w32 {
         width: 20%;
     }
 
-    footer .current .player.w40 {
-        width: 60%;
+    footer .current .fav {
+        padding-left: 20px;
+    }
+
+    footer .player {
+        padding: 0 20px;
     }
 
     footer .volume.w30 {
@@ -552,10 +549,22 @@ height: 100vh;
     }
 }
 
-@media screen and (min-width:870px) {
-    
+@media screen and (min-width:800px) {
+
 }
 
 @media screen and (min-width:1024px) {
+
+    .playable .wrapper .recent .card.w50,
+    .playable .wrapper .curated .card.w50,
+    .playable .wrapper .artist .card.w50 {
+        width: calc(100% / 6);
+    }
+
+    .playable .wrapper .curated .play-container,
+    .playable .wrapper .artist .play-container {
+        width: 100%;
+    }
+
 
 }
