@@ -104,10 +104,6 @@ h6 {
 /* UTILITIES */
 
     /* misc */
-    .ov-hidden {
-        overflow: hidden;
-    }
-
     .centered {
         margin: 0 auto;
     }
@@ -121,6 +117,7 @@ h6 {
         cursor: pointer;
     }
 
+    /* overflow */
     .ov-auto {
         overflow: auto;
     }
@@ -195,9 +192,6 @@ h6 {
 .ta-center {
     text-align: center;
 }
-.ta-right {
-    text-align: right;
-}
 
 /* SPACING */
 
@@ -258,9 +252,6 @@ h6 {
     .h3px {
         height: 3px;
     }
-    .h30px {
-        height: 30px;
-    }
     .h35px {
         height: 35px;
     }
@@ -276,20 +267,14 @@ h6 {
     .h80px {
         height: 80px;
     }
-    .h80 {
-        height: 80%;
-    }
 
     /* padding */
-    .py3px {
-        padding-block: 3px;
-    }
     .py5px {
         padding-block: 5px;
     }
-    .py15px {
+    /* .py15px {
         padding-block: 15px;
-    }
+    } */
     .p5px {
         padding: 5px;
     }
@@ -314,12 +299,12 @@ h6 {
     .pl15px {
         padding-left: 15px;
     }
-    .pr10px {
+    /* .pr10px {
         padding-right: 10px;
     }
     .pr15px {
         padding-right: 15px;
-    }
+    } */
 
     /* margin */
     .mr5px {
