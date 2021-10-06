@@ -20,8 +20,18 @@ html {
     font-size: 1.2rem;
 }
 
+.fsz13 {
+    font-size: 1.3rem;
+}
+
+.fsz24 {
+    font-size: 2.4rem;
+}
+
 h2,
-h3 {
+h3,
+h4,
+h6 {
     color: white;
 }
 
@@ -35,12 +45,15 @@ h3 {
 
 h4 {
     font-size: 1.7rem;
-    color: white;
 }
 
 h5 {
-    font-size: 1.3rem;
-    color: #7b7d82;
+    font-size: 1.1rem;
+    color: #a3a3a3;
+}
+
+h6 {
+    font-size: 1.2rem;
 }
 
 
@@ -55,6 +68,9 @@ h5 {
     .bg_black {
         background-color: black;
     }
+    .bg_white {
+        background-color: white;
+    }
     .bg_primary {
         background-color: #141922;
     }
@@ -65,7 +81,7 @@ h5 {
         background-color: #282828;
     }
     .bg_rgba {
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     /* text-colors */
@@ -74,6 +90,15 @@ h5 {
     }
     .color_sec {
         color: #a3a3a3;
+    }
+    .hov_white:hover {
+        color: white;
+    }
+    .op-less {
+        opacity: 0.6;
+    }
+    .hov_opacity:hover {
+        opacity: 1;
     }
 
 /* UTILITIES */
@@ -98,6 +123,10 @@ h5 {
 
     .ov-auto {
         overflow: auto;
+    }
+
+    .pointer {
+        cursor: pointer;
     }
 
     /* imgs */
@@ -141,10 +170,22 @@ h5 {
 .self-end {
     align-self: flex-end;
 }
+.jc-sp {
+    justify-content: space-between;
+}
+.jc-sp-around {
+    justify-content: space-around;
+}
 
 /* TEXT ALIGNING */
 .ta-center {
     text-align: center;
+}
+.ta-right {
+    text-align: right;
+}
+.va-middle {
+    vertical-align: middle;
 }
 
 
@@ -154,14 +195,26 @@ h5 {
     .w100 {
         width: 100%;
     }
+    .w20 {
+        width: 20%;
+    }
     .w25 {
         width: 25%;
     }
     .w30 {
         width: 30%;
     }
+    .w32 {
+        width: 32%;
+    }
     .w35px {
         width: 35px;
+    }
+    .w40 {
+        width: 40%;
+    }
+    .w50px {
+        width: 50px;
     }
     .w50 {
         width: 50%;
@@ -169,10 +222,16 @@ h5 {
     .w70 {
         width: 70%;
     }
+    .w80px {
+        width: 80px;
+    }
 
     /* height */
     .h100 {
         height: 100%;
+    }
+    .h3px {
+        height: 3px;
     }
     .h30px {
         height: 30px;
@@ -183,6 +242,12 @@ h5 {
     .h40px {
         height: 40px;
     }
+    .h50px {
+        height: 50px;
+    }
+    .h50 {
+        height: 50%;
+    }
     .h80px {
         height: 80px;
     }
@@ -190,6 +255,9 @@ h5 {
     /* padding */
     .py3px {
         padding-block: 3px;
+    }
+    .py5px {
+        padding-block: 5px;
     }
     .py15px {
         padding-block: 15px;
@@ -200,13 +268,49 @@ h5 {
     .p15px {
         padding: 15px;
     }
+    .px5px {
+        padding-inline: 5px;
+    }
     .px8px {
         padding-inline: 8px;
     }
-
+    .px15px {
+        padding-inline: 15px;
+    }
+    .pl10px {
+        padding-left: 10px;
+    }
+    .pl15px {
+        padding-left: 15px;
+    }
+    .pr15px {
+        padding-right: 15px;
+    }
     /* margin */
     .mr5px {
         margin-right: 5px;
+    }
+
+    .mr15px {
+        margin-right: 15px;
+    }
+    .ml5px {
+        margin-left: 5px;
+    }
+    .ml10px {
+        margin-left: 10px;
+    }
+    .ml15px {
+        margin-left: 15px;
+    }
+    .mx5px {
+        margin-inline: 5px;
+    }
+    .mx8px {
+        margin-inline: 8px;
+    }
+    .mx15px {
+        margin-inline: 15px;
     }
     .my5px {
         margin-block: 5px;
@@ -222,6 +326,9 @@ h5 {
     }
     .mb-10px {
         margin-bottom: 10px;
+    }
+    .mb30px {
+        margin-bottom: 30px;
     }
     .mb-50px {
         margin-bottom: 50px;
@@ -261,7 +368,7 @@ height: 100vh;
         color: #a3a3a3;
     }
 
-    .playable-navigator ul li:after {
+    .playable-navigator ul li::after {
         content: '';
         width: 35px;
         border-bottom:2px solid #adff2f;
@@ -274,7 +381,7 @@ height: 100vh;
         display: block;
     }
 
-    .card:hover .overlay {
+    .overlay-wrapper:hover .overlay {
         display: flex;
     }
 
@@ -292,6 +399,26 @@ height: 100vh;
 
 
 /* FOOTER */
-footer {
-    width: 100%;
+
+.bar {
+    border-radius: 5px;
+}
+
+.bar .cursor {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    top: -3px;
+    left: 24.5%;
+    display: none;
+}
+
+.progress:hover .cursor {
+    display: block;
+}
+
+.volume div.flex:hover .cursor {
+    display: block;
+    left: 100%;
 }
