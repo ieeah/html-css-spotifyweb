@@ -24,6 +24,10 @@ html {
     font-size: 1.3rem;
 }
 
+.fsz15 {
+    font-size: 1.5rem;
+}
+
 .fsz24 {
     font-size: 2.4rem;
 }
@@ -167,6 +171,9 @@ h6 {
 .ai-center {
     align-items: center;
 }
+.ai-start {
+    align-items: flex-start;
+}
 .self-end {
     align-self: flex-end;
 }
@@ -221,6 +228,9 @@ h6 {
     }
     .w70 {
         width: 70%;
+    }
+    .w80 {
+        width: 80%;
     }
     .w80px {
         width: 80px;
@@ -290,7 +300,9 @@ h6 {
     .mr5px {
         margin-right: 5px;
     }
-
+    .mr10px {
+        margin-right: 10px;
+    }
     .mr15px {
         margin-right: 15px;
     }
@@ -327,6 +339,9 @@ h6 {
     .mb-10px {
         margin-bottom: 10px;
     }
+    .mb20px {
+        margin-bottom: 20px;
+    }
     .mb30px {
         margin-bottom: 30px;
     }
@@ -353,6 +368,25 @@ height: 100vh;
     /* SIDE BAR */
     aside {
         width: 55px;
+    }
+
+    .border_left {
+        border-left: 3px solid transparent;
+    }
+
+    .border_left:hover {
+        border-color: #adff2f;
+    }
+
+    aside .aside-head span,
+    aside .brand .big-logo {
+        display: none;
+    }
+
+    aside .profile span,
+    aside .profile hr,
+    aside .play-lists {
+        display: none;
     }
 
 
@@ -422,3 +456,59 @@ height: 100vh;
     display: block;
     left: 100%;
 }
+
+
+/*  **************
+    RESPONSIVENESS
+    ************** */
+
+    @media screen and (min-width:500px) {
+        aside.ai-center {
+            width: 200px;
+            align-items: flex-start;
+        }
+
+        aside .brand {
+            margin-top: 0;
+            margin-bottom: 10px;
+            padding: 15px 0 0 15px;
+        }
+
+        aside .brand .big-logo {
+            height: 35px;
+        }
+
+        aside .aside-head span {
+            display: block;
+        }
+
+        aside .aside-head .item {
+            margin-block: 10px 0px;
+            padding-left: 11px;
+        }
+        
+        aside .brand .big-logo,
+        aside .profile span,
+        aside .profile hr, 
+        aside .play-lists {
+            display: block;
+        }
+
+        aside .brand .small-logo {
+            display: none;
+        }
+
+        aside .profile {
+            align-items: flex-start;
+            padding-left: 15px;
+            padding-bottom: 15px;
+        }
+
+        aside .profile .down_app {
+            margin-bottom: 0;
+        }
+
+        aside .profile hr {
+            margin-block: 10px;
+        }
+

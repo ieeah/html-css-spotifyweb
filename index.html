@@ -18,61 +18,65 @@
         <!-- aside bar -->
         <aside class="flex flex-column ai-center h100 bg_black noshrink">
             <!-- the brand logos being shown based on screen size -->
-            <div class="brand mb-10px mtop-10px h40px ta-center">
-                <img class="big-logo h100 contain-center" src="./img/logos and icons/logo.svg" alt="" hidden>
+            <div class="brand mb-10px h40px ta-center">
+                <img class="big-logo h100 contain-center" src="./img/logos and icons/logo.svg" alt="">
                 <img class="small-logo h100 contain-center" src="./img/logos and icons/logo-small.svg" alt="">
             </div>
             <!-- the three aside main nav link area -->
-            <div class="aside-head grow">
-                <div class="item aside-home my5px p5px h35px ta-center op-less hov_opacity pointer">
+            <div class="aside-head flex flex-column ai-start">
+                <div class="item aside-home my5px p5px h35px ta-center op-less hov_opacity pointer border_left flex ai-center">
                     <img class="h100" src="./img/logos and icons/home.svg" alt="">
                     <!-- will appear in larger screens -->
-                    <span hidden>
-                        <h4>Home</h4>
+                    <span class="ml10px">
+                        <h4 class="fsz12">Home</h4>
                     </span>
                 </div>
-                <div class="item aside-home my5px p5px h35px ta-center op-less hov_opacity pointer">
+                <div class="item aside-home my5px p5px h35px ta-center op-less hov_opacity pointer border_left flex ai-center">
                     <img class="h100" src="./img/logos and icons/search.svg" alt="">
                     <!-- will appear in larger screens -->
-                    <span hidden
-                    >
-                        <h4>Cerca</h4>
+                    <span class="ml10px">
+                        <h4  class="fsz12">Cerca</h4>
                     </span>
                 </div>
-                <div class="item aside-home my5px p5px h35px ta-center op-less hov_opacity pointer">
+                <div class="item aside-home my5px p5px h35px ta-center op-less hov_opacity pointer border_left flex ai-center">
                     <img class="h100" src="./img/logos and icons/libreria.svg" alt="">
                     <!-- will appear in larger screens -->
-                    <span hidden>
-                        <h4>La tua libreria</h4>
+                    <span class="ml10px">
+                        <h4  class="fsz12">La tua libreria</h4>
                     </span>
                 </div>
             </div>
             <!-- where the playlists will be shown -->
-            <div hidden class="play-lists grow2">
-                <h2>PLAYLIST</h2>
-                <div class="item h40px flex ai-center">
-                    <div class="w30 bg_sec flex ai-center jc-center h100">
+            <div class="play-lists grow p15px">
+                <h2 class="fsz15 mb-10px">PLAYLIST</h2>
+                <div class="item h40px flex ai-center op-less hov_opacity pointer">
+                    <div class="w35px h35px mr10px bg_sec flex ai-center jc-center">
                         <i class="fas fa-plus"></i>
                     </div>
-                    <div class="w70">
+                    <div class="w80">
                         <h4>Crea Playlist</h4>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="item p15px my5px op-less hov_opacity pointer">
+                        Nome Playlist
                     </div>
                 </div>
             </div>
             <!-- profile details and download link -->
-            <div class="profile h80px self-end w100 ta-center flex flex-column ai-center">
-                <div class="down_app mb-10px">
-                    <i class="far fa-arrow-alt-circle-down color_sec fsz18 op-less hov_opacity pointer"></i>
-                    <span hidden>
+            <div class="profile self-end w100 p15px ta-center flex flex-column ai-center">
+                <div class="down_app mb20px flex ai-center jc-sp op-less hov_opacity pointer">
+                    <i class="far fa-arrow-alt-circle-down color_sec fsz18 mr10px"></i>
+                    <span>
                         <h5>Installa App</h5>
                     </span>
-                    <hr hidden>
                 </div>
-                <div class="pro_pic ta-center op-less hov_opacity pointer">
-                    <div class="wrapper circle h35px w35px bg_sec ov-hidden">
+                <hr class="w100">
+                <div class="pro_pic ta-center op-less hov_opacity pointer flex ai-center">
+                    <div class="wrapper circle h35px w35px bg_sec ov-hidden mr10px">
                         <img class="h35px w35px" src="./img/logos and icons/profile.svg" alt="">
                     </div>
-                    <span hidden>
+                    <span>
                         <h3>John Doe</h3>
                     </span>
                 </div>
