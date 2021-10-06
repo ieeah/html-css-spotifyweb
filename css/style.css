@@ -28,10 +28,6 @@ html {
     font-size: 1.5rem;
 }
 
-.fsz24 {
-    font-size: 2.4rem;
-}
-
 h2,
 h3,
 h4,
@@ -157,6 +153,9 @@ h6 {
 }
 .wrap {
     flex-wrap: wrap;
+}
+.nogrow {
+    flex-grow: 0;
 }
 .grow {
     flex-grow: 1;
@@ -422,7 +421,8 @@ height: 100vh;
 
     aside .profile span,
     aside .profile hr,
-    aside .play-lists {
+    aside .play-lists,
+    aside h2 {
         display: none;
     }
 
@@ -488,6 +488,10 @@ footer .volume .wrapper > .bar {
     transform: translateY(-10px);
 }
 
+.play-btn {
+    font-size: 3rem;
+}
+
 .bar .cursor {
     width: 10px;
     height: 10px;
@@ -544,7 +548,8 @@ footer .volume .wrapper > .bar {
         aside .brand .big-logo,
         aside .profile span,
         aside .profile hr, 
-        aside .play-lists {
+        aside .play-lists,
+        aside h2 {
             display: block;
         }
 
@@ -579,13 +584,18 @@ footer .volume .wrapper > .bar {
         width: 25%;
     }
 
-    
+    footer .volume {
+        width: 20%;
+    }
     footer .volume .icons {
         flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
     }
 
     footer .volume .wrapper {
         justify-content: center;
+        width: 50%;
     }
 
     footer .volume .wrapper > .bar {
@@ -594,6 +604,13 @@ footer .volume .wrapper > .bar {
 
 @media screen and (min-width:714px) {
 
+    footer .current .details {
+        width: 40%;
+    }
+
+    footer .player {
+        width: 40%;
+    }
 
 }
 
@@ -610,5 +627,23 @@ footer .volume .wrapper > .bar {
         width: 100%;
     }
 
+    footer .current {
+        width: 15%;
+    }
 
+    footer .player {
+        width: 45%;
+    }
+
+    footer .volume {
+        width: 15%;
+    }
+
+    footer .volume .icons {
+        width: 40%;
+    }
+
+    footer .volume .wrapper {
+        width: 60%;
+    }
 }

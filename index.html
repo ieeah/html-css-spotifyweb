@@ -16,7 +16,7 @@
     <!-- main content and aside bar -->
     <main class="grow bg_primary flex h80px">
         <!-- aside bar -->
-        <aside class="flex flex-column ai-center h100 bg_black noshrink ov-auto">
+        <aside class="flex flex-column ai-center h100 bg_black noshrink">
             <!-- the brand logos being shown based on screen size -->
             <div class="brand mb-10px h40px ta-center">
                 <img class="big-logo h100 contain-center" src="./img/logos and icons/logo.svg" alt="">
@@ -47,17 +47,41 @@
                 </div>
             </div>
             <!-- where the playlists will be shown -->
-            <div class="play-lists grow mtop15px ov_auto">
-                <h2 class="fsz15 mb-10px pl15px">PLAYLIST</h2>
-                <div class="item h40px flex ai-center op-less hov_opacity pointer">
-                    <div class="w35px h35px ml15px mr10px bg_sec flex ai-center jc-center">
+            <h2 class="fsz15 mb-10px pl15px">PLAYLIST</h2>
+            <div class="play-lists grow ov-auto">
+                <div class="item h40px pl15px flex ai-center op-less hov_opacity pointer">
+                    <div class="w35px h35px bg_sec flex ai-center jc-center">
                         <i class="fas fa-plus"></i>
                     </div>
                     <div class="w80">
-                        <h4>Crea Playlist</h4>
+                        <h4 class="ml10px">Crea Playlist</h4>
                     </div>
                 </div>
-                <div class="wrapper ov-auto">
+                <div class="wrapper">
+                    <div class="item mb-10px mtop15px op-less hov_opacity pointer color_main fsz13 border_left pl15px">
+                        Nome Playlist
+                    </div>
+                    <div class="item mb-10px mtop15px op-less hov_opacity pointer color_main fsz13 border_left pl15px">
+                        Nome Playlist
+                    </div>
+                    <div class="item mb-10px mtop15px op-less hov_opacity pointer color_main fsz13 border_left pl15px">
+                        Nome Playlist
+                    </div>
+                    <div class="item mb-10px mtop15px op-less hov_opacity pointer color_main fsz13 border_left pl15px">
+                        Nome Playlist
+                    </div>
+                    <div class="item mb-10px mtop15px op-less hov_opacity pointer color_main fsz13 border_left pl15px">
+                        Nome Playlist
+                    </div>
+                    <div class="item mb-10px mtop15px op-less hov_opacity pointer color_main fsz13 border_left pl15px">
+                        Nome Playlist
+                    </div>
+                    <div class="item mb-10px mtop15px op-less hov_opacity pointer color_main fsz13 border_left pl15px">
+                        Nome Playlist
+                    </div>
+                    <div class="item mb-10px mtop15px op-less hov_opacity pointer color_main fsz13 border_left pl15px">
+                        Nome Playlist
+                    </div>
                     <div class="item mb-10px mtop15px op-less hov_opacity pointer color_main fsz13 border_left pl15px">
                         Nome Playlist
                     </div>
@@ -254,11 +278,11 @@
                 <i class="far fa-folder pointer hov_white w100"></i>
             </div>
         </div>
-        <div class="player w50 px8px h100 flex ai-center wrap">
+        <div class="player w50 px8px h100 flex ai-center wrap nogrow">
             <div class="controls w100 h50 py5px color_main flex ai-center jc-sp px5px wrap">
                 <i class="fas fa-random pointer"></i>
                 <i class="fas fa-step-backward pointer"></i>
-                <i class="far fa-play-circle fsz24 pointer"></i>
+                <i class="far fa-play-circle play-btn pointer"></i>
                 <i class="fas fa-step-forward pointer"></i>
                 <i class="fas fa-redo pointer"></i>
             </div>
@@ -278,16 +302,15 @@
                 <i class="fas fa-desktop fsz13 pointer my5px"></i>
                 <i class="fas fa-volume-up fsz13 pointer my5px"></i>
             </div>
-            
-                <div class="wrapper flex flex-column jc-end w100 h100 px8px">
-                    <div class="bar w100 h3px bg_sec">
-                        <div class="w70 flex h3px">
-                            <div class="h100 bg_white w40 relative">
-                                <div class="cursor absolute pointer"></div>
-                            </div>
+            <div class="wrapper flex flex-column jc-end w70 h100 pl10px">
+                <div class="bar w100 h3px bg_sec">
+                    <div class="w70 flex h3px">
+                        <div class="h100 bg_white w40 relative">
+                            <div class="cursor absolute pointer"></div>
                         </div>
                     </div>
                 </div>
+            </div>
             
         </div>
     </footer>
