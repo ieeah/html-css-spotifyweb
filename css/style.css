@@ -111,6 +111,10 @@ h6 {
         cursor: pointer;
     }
 
+    .z1 {
+        z-index: 1;
+    }
+
     /* overflow */
     .ov-auto {
         overflow: auto;
